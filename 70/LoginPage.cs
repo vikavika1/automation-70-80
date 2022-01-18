@@ -5,9 +5,10 @@ using OpenQA.Selenium.Support.UI;
 
 namespace _70
 {
-    class LoginPage
+    public class LoginPage
     {
-        IWebDriver driver;
+        private readonly IWebDriver driver;
+
         private static string url = "https://passport.yandex.by/";
         private static By InputBox = By.CssSelector(".Textinput-Control");
         private static By Button = By.CssSelector(".Button2_view_action");
@@ -17,7 +18,7 @@ namespace _70
             this.driver.Navigate().GoToUrl(url);
             this.driver.Manage().Window.Maximize();
         }
-        public EmailPage login(string username, string password) {
+        public EmailPage Login(string username, string password) {
             var usernameBox = driver.FindElement(InputBox);
             usernameBox.SendKeys(username);
 

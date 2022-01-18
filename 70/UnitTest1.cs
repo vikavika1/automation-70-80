@@ -12,11 +12,12 @@ namespace _70
         }
 
         [Test]
-        public void Test1() {
+        public void Test1()
+        {
             IWebDriver driver = new ChromeDriver();
-            
+
             LoginPage loginPage = new LoginPage(driver);
-            loginPage.login("viktoriayaroshenko1@yandex.ru", "Polinka9999");
+            loginPage.Login("viktoriayaroshenko1@yandex.ru", "Polinka9999");
         }
     }
 }

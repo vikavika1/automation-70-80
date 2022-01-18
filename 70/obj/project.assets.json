@@ -4256,11 +4256,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Виктория\\source\\repos\\70\\70\\70.csproj",
+      "projectUniqueName": "C:\\Users\\Виктория\\source\\repos\\automation-70-80\\70\\70.csproj",
       "projectName": "70",
-      "projectPath": "C:\\Users\\Виктория\\source\\repos\\70\\70\\70.csproj",
+      "projectPath": "C:\\Users\\Виктория\\source\\repos\\automation-70-80\\70\\70.csproj",
       "packagesPath": "C:\\Users\\Виктория\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Виктория\\source\\repos\\70\\70\\obj\\",
+      "outputPath": "C:\\Users\\Виктория\\source\\repos\\automation-70-80\\70\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Виктория\\AppData\\Roaming\\NuGet\\NuGet.Config",

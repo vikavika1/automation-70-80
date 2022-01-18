@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "srsYSBnufixRDLn/b9EHr7SWuJD918Gb++HRCP4i9p9cJORqPmLx3kS7FH1W9umjUEWA3T2Lul4wgyXVNrArOw==",
+  "dgSpecHash": "+WeMO4mQ894sDzG/KRvtePko19/WJgGOtGgoQoDAnvmj3iF/miVmvaPuv1kJeshvNolZYqsvSFJPmj5MHUQQsA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Виктория\\source\\repos\\70\\70\\70.csproj",
+  "projectFilePath": "C:\\Users\\Виктория\\source\\repos\\automation-70-80\\70\\70.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Виктория\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Виктория\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

@@ -11,8 +11,8 @@ using OpenQA.Selenium.Support.UI;
 
 namespace _70
 {
-    class EmailPage {
-        IWebDriver driver;
+    public class EmailPage {
+        private readonly IWebDriver driver;
         
         private static By LogoutIcon = By.ClassName("user-account");
         private static By LogoutLink = By.ClassName("legouser__menu-item_action_exit");
@@ -20,12 +20,17 @@ namespace _70
             this.driver = driver;
             Logout();
         }
+
+        public void MakeScreenshot()
+        {
+            Screenshot screenshot = ((ITakesScreenshot)driver).GetScreenshot();
+            screenshot.SaveAsFile("Screen1", OpenQA.Selenium.ScreenshotImageFormat.Jpeg);
+        }
         public void Logout() {
             var iconWait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
             var iconElement = iconWait.Until(condition => driver.FindElement(LogoutIcon).Displayed);
 
-            Screenshot screenshot = ((ITakesScreenshot)driver).GetScreenshot();
-            screenshot.SaveAsFile("Screen1", OpenQA.Selenium.ScreenshotImageFormat.Jpeg);
+            MakeScreenshot();
 
             var logoutIconElement = driver.FindElement(LogoutIcon);
             logoutIconElement.Click();
@@ -35,6 +40,8 @@ namespace _70
 
             var logoutLinkElement = driver.FindElement(LogoutLink);
             logoutLinkElement.Click();
+
+            Assert.IsTrue(driver.FindElement(By.CssSelector(".Button2_view_action")).Displayed);
         }
     }
 }
